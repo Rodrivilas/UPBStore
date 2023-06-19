@@ -1,0 +1,16 @@
+<div class="login-container" >
+    <form class="login-form" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      
+        <label class="form-label">Correo electrónico:</label>
+        <input type="email" class="form-control" formControlName="email">
+      
+      
+        <label class="form-label">Contraseña:</label>
+        <input type="password" class="form-control" formControlName="password">
+      
+      <button type="submit" class="login-btn" value="Enviar">Iniciar sesión</button>
+      <button class="btn btn-info" (click)="onClick()" ><i class="fa-brands fa-google"></i>Iniciar sesión con Google</button>
+    </form>
+    
+    <p class="bottom-text">¿No tienes una cuenta? <a routerLink="/register">Registrate</a></p>
+  </div>

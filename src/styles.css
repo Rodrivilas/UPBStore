@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+@font-face {
+    font-family: Khaus-regular;
+    src: url("src/assets/fonts/Khaus105-Regular.ttf");
+  }
+@font-face {
+    font-family: Khaus-bold;
+    src: url("src/assets/fonts/Khaus105-Bold.ttf");
+}
+
+@font-face {
+    font-family: Khaus-light;
+    src: url("src/assets/fonts/Khaus105-Light.ttf");
+  }
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75.76px;
+    line-height: 96px;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56.83px;
+    line-height: 68px;
+}
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42.63px;
+    line-height: 52px;
+}
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 31.98px;
+    line-height: 39px;
+}
+h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23.99px;
+    line-height: 29px;
+}
+p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.5px;
+    
+}
+@media screen and (max-width: 768px) {
+    h1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42.72px;
+        line-height: 52px;
+    }
+    h2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34.18px;
+        line-height: 42px;
+    }
+    h3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27.34px;
+        line-height: 33px;
+    }
+    h4{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21.88px;
+        line-height: 27px;
+    }
+    h5{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 21px;
+    }
+    p{
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        
+        
+    }
+  }
+ 

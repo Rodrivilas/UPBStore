@@ -1,0 +1,74 @@
+<div class="container" >
+  
+  <section class="one" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+    <h4 class="title">¡Bienvenido! Ahora podrás gestionar eficientemente los productos y mantener un control preciso del inventario.</h4>
+    <h3>Entra ahora y edita el inventario de la tienda.</h3>
+    <button *ngIf="!logged" routerLink="/register" class="btn">Registrar usuario</button>
+    <button *ngIf="!logged" routerLink="/login" class="btn">Iniciar sesión</button>
+    <button *ngIf="logged" routerLink="/shop-list" class="btn">Tienda</button>  
+  </section>
+    
+  <section class="two" data-aos="fade" data-aos-delay="1500">
+    <div class="container my-5 py-2">
+    <div class="row">
+      <h2 class="text-center font-weight-bold my-5">¡Visita la UPB Store en el campus!</h2>
+      <img data-aos="fade-up" data-aos-delay="700" class="col-md-4" src="assets/bandera.jpg" alt="">
+      <img data-aos="fade-up" data-aos-delay="850" class="col-md-4"src="assets/hoodie w.jpg" alt="">
+      <img data-aos="fade-up" data-aos-delay="1000" class="col-md-4"src="assets/store.jpg" alt="">
+
+    </div>
+    </div>
+  </section>
+
+  <section class="three">
+    <div class="container my-5 py-2" data-aos="fade" data-aos-delay="200" data-aos-duration="1000">
+      <h2 class="text-center font-weight-bold my-5">Aprovecha las características más importantes</h2>
+      <div class="row">
+        <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" class="col-md-4 text-center">
+          <i class="fas fa-clock fa-2x"></i>
+          <h4>Tiempo Real</h4>
+          <p>Seguimiento en tiempo real de las existencias de tus productos.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="850" data-aos-duration="1000" class="col-md-4 text-center">
+          <i class="fas fa-warehouse fa-2x"></i>
+          <h4>Administra tu inventario</h4>
+          <p>Añade artículos en tu inventario.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="col-md-4 text-center">
+          <i class="fas fa-pen-square fa-2x"></i>
+          <h4>Edita tus artículos</h4>
+          <p>Elimina tus artículos y actualízalos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="four">
+    <div  data-aos="zoom-in">
+      <h3>Contáctanos y mandanos sugerencias </h3>
+      <button class="btn" routerLink="/about"> Mas información aqui   <i class="fa-solid fa-phone-volume fa-beat"></i></button>
+    </div>
+  </section>
+  <div  id="copyright">
+    <div class="copyright">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                Copyright © 2023 UPB Store.
+                upb.store@upb.edu
+            </div>
+            <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                <a href="#" class="d-inline-block text-center ml-2">
+                  <i class="fa fa-facebook fa-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="d-inline-block text-center ml-2">
+                  <i class="fa fa-twitter fa-2xl" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="d-inline-block text-center ml-2">
+                  <i class="fa fa-linkedin fa-2xl" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>

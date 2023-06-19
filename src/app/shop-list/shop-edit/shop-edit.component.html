@@ -1,0 +1,43 @@
+<div class="container" >
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()"> 
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" formControlName="nombre" >
+      </div>
+    
+      <div>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" class="form-control" formControlName="descripcion">
+      </div>
+      
+      <div>
+        <label for="precio">Precio:</label>
+        <input type="number" class="form-control" formControlName="precio">
+      </div>
+      
+      <div>
+        <label for="imagen">Imagen:</label>
+        <input type="text" class="form-control" formControlName="imagen">
+      </div>
+    
+      <div>
+        <label for="cantidad">Cantidad Disponible:</label>
+        <input type="number" class="form-control" formControlName="cantidad">
+      </div>
+    
+      <div >
+          <label for="color">Colores:</label>
+          <input type="text" class="form-control" formControlName="color">
+      </div>
+
+      <div >
+        <label for="color">Tipo:</label>
+        <input type="text" class="form-control" formControlName="tipo">
+      </div>
+    
+      <button type="submit" value="Enviar">Enviar</button>
+  </form>
+
+</div>
+  
+  

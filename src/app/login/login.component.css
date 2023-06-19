@@ -1,0 +1,70 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e9e9e9;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form label {
+    font-family:  Khaus-light;
+    font-size: x-large;
+    margin-bottom: 10px;
+    align-self: self-start;
+    color: #f8f6f6;
+  }
+  
+  .login-form input {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #D50F28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #850000;
+  }
+  body {
+    background-image: url("src/assets/logo.jpg");
+    background-color: #cccccc;
+   }
+  .bottom-text{
+    font-size: 22px;
+  }
+  .bottom-text a{
+    color: #850000;
+    font-weight: 400;
+  }
+  i{
+    margin-right:10px;
+  }

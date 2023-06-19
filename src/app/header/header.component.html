@@ -1,0 +1,37 @@
+
+<div class="navbar-sup">
+  
+  <div fxHide.gt-sm  >
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <img src="assets/logoUpb.png" alt="">
+  </div>
+  
+  
+
+  
+  <div class="navbar" fxFlex fxLayoutAlign="end"  fxHide.xs fxHide.sm>
+    <ul fxLayout fxLayoutGap="15px">
+      <li>
+
+        <a *ngIf="logged" routerLink="/shop-list"><i class="fa-solid fa-shop"></i>Tienda</a>
+      </li>
+      <li>
+
+        <a routerLink="/about"><i class="fa-solid fa-id-card"></i>Contacto</a>
+      </li>
+      <li>
+
+        <a  *ngIf="logged" class="cerrar" (click)="onClick()"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+      </li>
+      <li>   
+      <a  *ngIf="!logged" routerLink="/login"><i class="fa-solid fa-user"></i>Iniciar sesión</a>
+    </li>
+    <li>
+      <a  *ngIf="!logged" routerLink="/register"><i class="fa-solid fa-user-plus"></i>Registrarse</a>
+    </li>
+    </ul>
+  </div>
+</div>
+ 

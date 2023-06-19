@@ -1,0 +1,30 @@
+
+<app-shop-order 
+(ordenarNombreEvent)="ordenarNombre()"
+(ordenarPrecioEvent)="ordenarPrecio()"
+(ordenarCantidadEvent)="ordenarCantidad()"
+(ordenarTipoEvent)="ordenarTipo()">
+</app-shop-order>
+<div class="add"*ngIf="!items.length">
+    <i class="fa-regular fa-square-plus fa-bounce"></i>
+    <h4>Añade un elemento a la tienda</h4>
+</div>
+<div class="shop" *ngIf="items.length">
+    
+    <div class="items">
+        
+        <div data-aos="fade"  class="item" *ngFor="let item of items">
+            <div class="image" [ngStyle]="{ backgroundImage: 'url('+item.imagen+')' }"></div>
+            <div class="info">
+                <h4>{{item.nombre}}</h4>
+                <p>{{item.descripcion}}</p>
+                <p>Precio: {{item.precio | currency}}</p>
+                <p>Cantidad: {{item.cantidad}}</p>
+                <p>Colores: {{item.color}}</p>
+                <p>Tipo: {{item.tipo}}</p>
+                <button class="btn" (click)="onClickDelete(item)">Borrar</button>
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,28 @@
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+    z-index:1;
+    position: fixed;
+    top: 0;
+}
+mat-sidenav {
+    width: 250px;
+    
+}
+main {
+    padding: 10px;
+}
+app-header{
+    z-index:1;
+
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+app-logo-component{
+    z-index:2;
+    position: fixed;
+    top:0;
+    left: 12vh;
+}

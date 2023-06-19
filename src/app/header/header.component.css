@@ -1,0 +1,43 @@
+.navbar {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: auto;
+    font-family: Khaus-regular;
+    
+  }
+  
+
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 30px;
+    padding-top: 10px;
+  }
+  ul{
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .navbar a:hover {
+    background-color: #770413;
+    color: rgb(255, 255, 255);
+  }
+
+  i{
+    margin-right: 10px;
+    color: #D50F28;
+  }
+ 
+  .cerrar i {
+    margin-left: 10px;
+  }
+img{
+  width: 30%;
+  align-items: center;
+}
+  

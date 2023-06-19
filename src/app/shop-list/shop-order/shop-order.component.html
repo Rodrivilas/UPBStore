@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="button-container">
+        <mat-button-toggle-group class="menu-orden" #group="matButtonToggleGroup">
+            <mat-button-toggle (click)="ordenarNombre()" value="A-Z" aria-label="Ordenar Nombres">
+                <i class="fa-solid fa-arrow-down-a-z"></i>
+            </mat-button-toggle>
+            <mat-button-toggle (click)="ordenarPrecio()"value="Precio" aria-label="Text align center">
+                <i class="fa-solid fa-dollar-sign"></i>
+            </mat-button-toggle>
+            <mat-button-toggle (click)="ordenarCantidad()"value="Cantidad" aria-label="Text align right">
+                <i class="fa-solid fa-arrow-down-9-1"></i>
+            </mat-button-toggle>
+            <mat-button-toggle (click)="ordenarTipo()"value="Tipo" aria-label="Text align justify">
+            <i class="fa-solid fa-shirt"></i>
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+        <div class="example-selected-value">Selected value: {{group.value}}</div>
+        <button mat-fab color="primary" routerLink="/shop-edit" class="addButton">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+</div>

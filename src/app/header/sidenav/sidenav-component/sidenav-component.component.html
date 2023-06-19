@@ -1,0 +1,8 @@
+<mat-list>
+    <mat-list-item routerLink="/" (click)="onSidenavClose()"><i class="fa-solid fa-house"></i><span class="nav-caption">Inicio</span></mat-list-item>
+    <mat-list-item *ngIf="logged" routerLink="/shop-list" (click)="onSidenavClose()"><i class="fa-solid fa-shop"></i><span class="nav-caption">Tienda</span></mat-list-item>
+    <mat-list-item routerLink="/about" (click)="onSidenavClose()"><i class="fa-solid fa-id-card"></i><span class="nav-caption">Contacto</span></mat-list-item>
+    <mat-list-item  *ngIf="logged" id="cerrar" (click)="onClick()" (click)="onSidenavClose()"><span class="nav-caption">Cerrar sesión</span><i class="fa-solid fa-right-from-bracket"></i></mat-list-item>
+    <mat-list-item  *ngIf="!logged" routerLink="/login" (click)="onSidenavClose()"><i class="fa-solid fa-user"></i><span class="nav-caption">Iniciar sesión</span></mat-list-item>
+    <mat-list-item  *ngIf="!logged" routerLink="/register" (click)="onSidenavClose()"><i class="fa-solid fa-user-plus"></i><span class="nav-caption">Registrarse</span></mat-list-item>
+</mat-list>
